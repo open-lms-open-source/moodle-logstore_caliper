@@ -52,6 +52,10 @@ class emit_task extends \core\task\scheduled_task {
         $store = new store($manager);
 
         $events = $DB->get_records('logstore_caliper_log');
+        if (empty($events)) {
+            return;
+        }
+
         $store->process_events($events);
 
         $DB->delete_records_list('logstore_caliper_log', 'id', array_keys($events));
