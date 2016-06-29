@@ -34,7 +34,7 @@ use \IMSGlobal\Caliper\actions;
 class AttemptStarted extends events\AssessmentEvent {
 
     public function __construct($translatorevent) {
-        parent::__construct($translatorevent);
+        parent::__construct();
         $this->setAction(new actions\Action(actions\Action::STARTED));
 
         $target = new assessment\Assessment($translatorevent['assignment_id']);

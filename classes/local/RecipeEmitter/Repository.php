@@ -36,6 +36,7 @@ class Repository extends \stdClass {
     /**
      * Constructs a new Repository.
      * @param Caliper\Sensor $sensor
+     * @param int $batchsize
      */
     public function __construct(Caliper\Sensor $sensor, $batchsize) {
         $this->sensor = $sensor;

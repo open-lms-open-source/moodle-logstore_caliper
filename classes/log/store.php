@@ -163,7 +163,7 @@ class store extends \stdClass implements \tool_log\log\writer {
 
     /**
      * Creates a connection to the Caliper Event Store.
-     * @return Sensor
+     * @return RecipeEmitter\Repository
      */
     private function connect_caliper_repository() {
         global $CFG;

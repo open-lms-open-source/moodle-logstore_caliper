@@ -53,7 +53,7 @@ class Controller extends \stdClass {
     /**
      * Creates a new event.
      * @param [String => Mixed] $translatorevent
-     * @return [String => Mixed]
+     * @return void
      */
     public function create_event(array $translatorevent) {
         global $CFG;

@@ -33,7 +33,7 @@ use \IMSGlobal\Caliper\actions;
 class AssignmentSubmitted extends events\AssessmentEvent {
 
     public function __construct($translatorevent) {
-        parent::__construct($translatorevent);
+        parent::__construct();
         $this->setAction(new actions\Action(actions\Action::SUBMITTED));
 
         $target = new assignable\AssignableDigitalResource($translatorevent['assignment_id']);

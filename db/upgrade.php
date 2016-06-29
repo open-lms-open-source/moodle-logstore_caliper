@@ -24,7 +24,7 @@
  */
 
 function xmldb_logstore_caliper_upgrade($oldversion) {
-    global $CFG, $DB;
+    global $DB;
 
     $dbman = $DB->get_manager();
 

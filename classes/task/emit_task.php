@@ -25,7 +25,6 @@
 
 namespace logstore_caliper\task;
 
-use tool_log\log\manager;
 use logstore_caliper\log\store;
 
 defined('MOODLE_INTERNAL') || die();

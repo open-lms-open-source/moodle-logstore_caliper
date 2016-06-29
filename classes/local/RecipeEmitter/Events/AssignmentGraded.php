@@ -34,7 +34,7 @@ use \IMSGlobal\Caliper\actions;
 class AssignmentGraded extends events\OutcomeEvent {
 
     public function __construct($translatorevent) {
-        parent::__construct($translatorevent);
+        parent::__construct();
 
         $person = new agent\Person($translatorevent['graded_user_id']);
 
