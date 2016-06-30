@@ -62,7 +62,7 @@ class store extends \stdClass implements \tool_log\log\writer {
      *
      */
     protected function is_event_ignored(event\base $event) {
-        return false;
+        return !isset(Translator\Controller::$routes[$event->eventname]);
     }
 
     /**
