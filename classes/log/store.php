@@ -37,6 +37,7 @@ use \logstore_caliper\local\RecipeEmitter;
 
 use \IMSGlobal\Caliper;
 use \IMSGlobal\Caliper\entities\lis;
+use logstore_caliper\log_expander_controller;
 
 /**
  * This class processes events and enables them to be sent to a logstore.
@@ -122,7 +123,7 @@ class store extends \stdClass implements \tool_log\log\writer {
     public function process_events(array $events) {
 
         // Initializes required services.
-        $moodlecontroller = new LogExpander\Controller($this->connect_moodle_repository());
+        $moodlecontroller = new log_expander_controller($this->connect_moodle_repository());
         $translatorcontroller = new Translator\Controller();
         $caliperrepository = $this->connect_caliper_repository();
         $calipercontroller = new RecipeEmitter\Controller($caliperrepository);
