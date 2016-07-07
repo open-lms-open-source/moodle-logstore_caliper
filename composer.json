@@ -1,0 +1,10 @@
+{
+    "name": "spvickers/moodle-logstore_caliper",
+    "version" : "0.1.0",
+    "type" : "project",
+    "license": "GPL v3",
+    "require": {
+        "learninglocker/moodle-log-expander": "~1.0",
+        "imsglobal/caliper": "^1.0.1"
+    }
+}
