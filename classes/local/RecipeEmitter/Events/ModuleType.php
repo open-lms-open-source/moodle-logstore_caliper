@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This file contains ...
+ * This file contains the class representing a Module Type event
  *
  * @package    logstore_caliper
  * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
@@ -28,5 +28,13 @@ namespace logstore_caliper\local\RecipeEmitter\Events;
 use \IMSGlobal\Caliper\util;
 use \IMSGlobal\Caliper\entities;
 
+/**
+ * This file contains the class representing a Module Type event
+ *
+ * @package    logstore_caliper
+ * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
+ * @author     Stephen Vickers
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class ModuleType extends util\BasicEnum implements entities\Type {
 }

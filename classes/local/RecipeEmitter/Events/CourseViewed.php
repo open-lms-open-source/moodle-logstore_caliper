@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This file contains ...
+ * This file contains the class representing a Course Viewed event
  *
  * @package    logstore_caliper
  * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
@@ -28,8 +28,20 @@ namespace logstore_caliper\local\RecipeEmitter\Events;
 use \IMSGlobal\Caliper\entities\lis;
 use \IMSGlobal\Caliper\events;
 
+/**
+ * This file contains the class representing a Course Viewed event
+ *
+ * @package    logstore_caliper
+ * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
+ * @author     Stephen Vickers
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class CourseViewed extends events\NavigationEvent {
 
+    /**
+     * Constructs a new event instance.
+     * @param array $translatorevent  Event array
+     */
     public function __construct($translatorevent) {
         parent::__construct();
         $course = new lis\CourseSection($translatorevent['course_id']);

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This file contains ...
+ * This file contains the class representing the Caliper event store
  *
  * @package    logstore_caliper
  * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
@@ -27,10 +27,21 @@ namespace logstore_caliper\local\RecipeEmitter;
 
 use \IMSGlobal\Caliper;
 
+/**
+ * This file contains the class representing the Caliper event store
+ *
+ * @package    logstore_caliper
+ * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
+ * @author     Stephen Vickers
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class Repository extends \stdClass {
+    /** @var Caliper\Sensor Caliper sensor object. */
     protected $sensor;
 
+    /** @var array Caliper events. */
     private $events = array();
+    /** @var int Maximum number of events to send in a batch. */
     private $batchsize;
 
     /**
@@ -38,7 +49,7 @@ class Repository extends \stdClass {
      * @param Caliper\Sensor $sensor
      * @param int $batchsize
      */
-    public function __construct(Caliper\Sensor $sensor, $batchsize) {
+    public function __construct($sensor, $batchsize) {
         $this->sensor = $sensor;
         $this->batchsize = intval($batchsize);
     }

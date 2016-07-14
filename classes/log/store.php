@@ -42,6 +42,10 @@ use logstore_caliper\log_expander_controller;
 /**
  * This class processes events and enables them to be sent to a logstore.
  *
+ * @package    logstore_caliper
+ * @copyright  2016 MoodleRooms
+ * @author     Stephen Vickers
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class store extends \stdClass implements \tool_log\log\writer {
     use \tool_log\helper\store;
@@ -51,7 +55,7 @@ class store extends \stdClass implements \tool_log\log\writer {
      * Constructs a new store.
      * @param \tool_log\log\manager $manager
      */
-    public function __construct(\tool_log\log\manager $manager) {
+    public function __construct($manager) {
         $this->helper_setup($manager);
     }
 
@@ -61,7 +65,7 @@ class store extends \stdClass implements \tool_log\log\writer {
      * @return bool
      *
      */
-    protected function is_event_ignored(event\base $event) {
+    protected function is_event_ignored($event) {
         return !isset(Translator\Controller::$routes[$event->eventname]);
     }
 
@@ -120,6 +124,10 @@ class store extends \stdClass implements \tool_log\log\writer {
 
     }
 
+    /**
+     * Process events.
+     * @param array $events
+     */
     public function process_events(array $events) {
 
         // Initializes required services.
@@ -192,6 +200,12 @@ class store extends \stdClass implements \tool_log\log\writer {
         return new LogExpander\Repository($DB, $CFG);
     }
 
+    /**
+     * Gets list of roles for user in course.
+     * @param mixed $user
+     * @param mixed $courseid
+     * @return string
+     */
     private function get_ims_role($user, $courseid) {
         $roles = array();
 

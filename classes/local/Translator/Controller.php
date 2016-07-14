@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This file contains ...
+ * This file contains the Controller class for translating Moodle events
  *
  * @package    logstore_caliper
  * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
@@ -25,8 +25,17 @@
 
 namespace logstore_caliper\local\Translator;
 
+/**
+ * This file contains the Controller class for translating Moodle events
+ *
+ * @package    logstore_caliper
+ * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
+ * @author     Stephen Vickers
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class Controller extends \stdClass {
-    protected $repo;
+
+    /** @var array Mapping of Moodle URLs to event types. */
     public static $routes = [
         '\core\event\course_viewed' => 'CourseViewed',
         '\mod_page\event\course_module_viewed' => 'ModuleViewed',
@@ -68,8 +77,8 @@ class Controller extends \stdClass {
 
     /**
      * Creates a new event.
-     * @param [String => Mixed] $expandedevent
-     * @return [String => Mixed]
+     * @param array $expandedevent  Event array
+     * @return array
      */
     public function create_event(array $expandedevent) {
         $route = isset($expandedevent['event']['eventname']) ? $expandedevent['event']['eventname'] : '';
