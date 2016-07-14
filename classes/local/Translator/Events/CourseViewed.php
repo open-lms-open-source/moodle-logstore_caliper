@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This file contains ...
+ * This file contains the class representing a Course Viewed event.
  *
  * @package    logstore_caliper
  * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
@@ -25,14 +25,21 @@
 
 namespace logstore_caliper\local\Translator\Events;
 
+/**
+ * This file contains the class representing a Course Viewed event.
+ *
+ * @package    logstore_caliper
+ * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
+ * @author     Stephen Vickers
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class CourseViewed extends Event {
     /**
      * Reads data for an event.
-     * @param [String => Mixed] $expandedevent
-     * @return [String => Mixed]
-     * @override Event
+     * @param array $expandedevent
+     * @return array
      */
-    public function read(array $expandedevent) {
+    public function read($expandedevent) {
         return array_merge(parent::read($expandedevent), [
             'recipe' => 'course_viewed',
         ]);

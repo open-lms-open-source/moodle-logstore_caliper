@@ -37,6 +37,10 @@ defined('MOODLE_INTERNAL') || die();
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class log_expander_controller extends Controller {
+    /**
+     * Constructs a new controller.
+     * @param Repository $repo
+     */
     public function __construct(Repository $repo) {
         parent::__construct($repo);
         static::$routes['\mod_quiz\event\attempt_started'] = 'AttemptEvent';

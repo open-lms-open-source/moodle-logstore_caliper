@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This file contains ...
+ * This file contains the Controller class for emitting Caliper events
  *
  * @package    logstore_caliper
  * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
@@ -29,8 +29,20 @@ use \IMSGlobal\Caliper\entities\agent;
 use \IMSGlobal\Caliper\entities\session;
 use \IMSGlobal\Caliper\entities\lis;
 
+
+/**
+ * This file contains the Controller class for emitting Caliper events
+ *
+ * @package    logstore_caliper
+ * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
+ * @author     Stephen Vickers
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class Controller extends \stdClass {
+    /** @var Repository Repository object for event store. */
     protected $repo;
+
+    /** @var array Supported event types. */
     public static $routes = [
         'course_viewed' => 'CourseViewed',
         'module_viewed' => 'ModuleViewed',
@@ -52,7 +64,7 @@ class Controller extends \stdClass {
 
     /**
      * Creates a new event.
-     * @param [String => Mixed] $translatorevent
+     * @param array $translatorevent Event to be processed
      * @return void
      */
     public function create_event(array $translatorevent) {

@@ -23,6 +23,10 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+/**
+ * Upgrades database.
+ * @param int $oldversion
+ */
 function xmldb_logstore_caliper_upgrade($oldversion) {
     global $DB;
 

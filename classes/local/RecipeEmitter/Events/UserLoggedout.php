@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This file contains ...
+ * This file contains User Logged Out event
  *
  * @package    logstore_caliper
  * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
@@ -29,8 +29,20 @@ use \IMSGlobal\Caliper\events;
 use \IMSGlobal\Caliper\actions;
 use \IMSGlobal\Caliper\entities\agent;
 
+/**
+ * This file contains User Logged Out event
+ *
+ * @package    logstore_caliper
+ * @copyright  2016 Moodlerooms Inc. http://www.moodlerooms.com
+ * @author     Stephen Vickers
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class UserLoggedout extends events\SessionEvent {
 
+    /**
+     * Constructs a new event instance.
+     * @param array $translatorevent  Event array
+     */
     public function __construct($translatorevent) {
         global $CFG;
 
