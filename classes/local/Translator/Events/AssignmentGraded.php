@@ -39,7 +39,7 @@ class AssignmentGraded extends Event {
      * @param array $expandedevent
      * @return array
      */
-    public function read($expandedevent) {
+    public function read(array $expandedevent) {
         return array_merge(parent::read($expandedevent), [
             'recipe' => 'assignment_graded',
             'assignment_id' => $expandedevent['module']->url,

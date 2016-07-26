@@ -39,7 +39,7 @@ class AttemptStarted extends Event {
      * @param array $expandedevent
      * @return array
      */
-    public function read($expandedevent) {
+    public function read(array $expandedevent) {
         return array_merge(parent::read($expandedevent), [
             'recipe' => 'attempt_started',
             'assignment_id' => $expandedevent['module']->url,

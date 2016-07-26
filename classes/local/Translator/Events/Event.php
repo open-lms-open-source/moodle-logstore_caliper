@@ -42,7 +42,7 @@ class Event extends \stdClass {
      * @param array $expandedevent
      * @return array
      */
-    public function read($expandedevent) {
+    public function read(array $expandedevent) {
         $other = unserialize($expandedevent['event']['other']);
         $sessionid = (isset($other['sessionid'])) ? $other['sessionid'] : session_id();
         $lisroles = array();

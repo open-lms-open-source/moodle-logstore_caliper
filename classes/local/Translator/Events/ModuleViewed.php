@@ -39,7 +39,7 @@ class ModuleViewed extends CourseViewed {
      * @param array $expandedevent
      * @return array
      */
-    public function read($expandedevent) {
+    public function read(array $expandedevent) {
         return array_merge(parent::read($expandedevent), [
             'recipe' => 'module_viewed',
             'module_id' => "{$expandedevent['user']->url}/module/{$expandedevent['module']->id}",

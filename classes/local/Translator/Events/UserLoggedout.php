@@ -39,7 +39,7 @@ class UserLoggedout extends Event {
      * @param array $expandedevent
      * @return array
      */
-    public function read($expandedevent) {
+    public function read(array $expandedevent) {
         return array_merge(parent::read($expandedevent), [
             'recipe' => 'user_loggedout',
         ]);

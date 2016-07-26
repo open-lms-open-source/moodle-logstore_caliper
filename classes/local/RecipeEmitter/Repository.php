@@ -25,7 +25,8 @@
 
 namespace logstore_caliper\local\RecipeEmitter;
 
-use \IMSGlobal\Caliper;
+use IMSGlobal\Caliper\events\Event;
+use IMSGlobal\Caliper\Sensor;
 
 /**
  * This file contains the class representing the Caliper event store
@@ -36,7 +37,7 @@ use \IMSGlobal\Caliper;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class Repository extends \stdClass {
-    /** @var Caliper\Sensor Caliper sensor object. */
+    /** @var Sensor Caliper sensor object. */
     protected $sensor;
 
     /** @var array Caliper events. */
@@ -46,17 +47,17 @@ class Repository extends \stdClass {
 
     /**
      * Constructs a new Repository.
-     * @param Caliper\Sensor $sensor
+     * @param Sensor $sensor
      * @param int $batchsize
      */
-    public function __construct($sensor, $batchsize) {
+    public function __construct(Sensor $sensor, $batchsize) {
         $this->sensor = $sensor;
         $this->batchsize = intval($batchsize);
     }
 
     /**
      * Creates an event in the store.
-     * @param Caliper\events\Event $event
+     * @param Event $event
      */
     public function create_event($event) {
         $this->events[] = $event;

@@ -29,8 +29,6 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once(__DIR__ . '/../../vendor/autoload.php');
 
-use \core\event;
-
 use \LogExpander;
 use \logstore_caliper\local\Translator;
 use \logstore_caliper\local\RecipeEmitter;
@@ -55,24 +53,22 @@ class store extends \stdClass implements \tool_log\log\writer {
      * Constructs a new store.
      * @param \tool_log\log\manager $manager
      */
-    public function __construct($manager) {
+    public function __construct(\tool_log\log\manager $manager) {
         $this->helper_setup($manager);
     }
 
     /**
      * Should the event be ignored (not logged)? Overrides tool_log\helper\buffered_writer.
-     * @param event\base $event
+     * @param \core\event\base $event
      * @return bool
-     *
      */
-    protected function is_event_ignored($event) {
+    protected function is_event_ignored(\core\event\base $event) {
         return !isset(Translator\Controller::$routes[$event->eventname]);
     }
 
     /**
      * Insert events in bulk to the database. Overrides tool_log\helper\buffered_writer.
      * @param array $evententries raw event data
-     *
      */
     protected function insert_event_entries($evententries) {
         global $DB, $COURSE;
