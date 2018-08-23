@@ -18,7 +18,7 @@
  * This file contains the class representing the Caliper event store
  *
  * @package    logstore_caliper
- * @copyright  2016 Blackboard Inc. http://www.moodlerooms.com
+ * @copyright  2016 Blackboard Inc. (http://www.blackboardopenlms.com)
  * @author     Stephen Vickers
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -32,7 +32,7 @@ use IMSGlobal\Caliper\Sensor;
  * This file contains the class representing the Caliper event store
  *
  * @package    logstore_caliper
- * @copyright  2016 Blackboard Inc. http://www.moodlerooms.com
+ * @copyright  2016 Blackboard Inc. (http://www.blackboardopenlms.com)
  * @author     Stephen Vickers
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
