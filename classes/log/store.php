@@ -18,7 +18,7 @@
  * External Caliper log store plugin
  *
  * @package    logstore_caliper
- * @copyright  2016 MoodleRooms
+ * @copyright  Copyright (c) 2016 Blackboard Inc. (http://www.blackboardopenlms.com)
  * @author     Stephen Vickers
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -41,7 +41,7 @@ use logstore_caliper\log_expander_controller;
  * This class processes events and enables them to be sent to a logstore.
  *
  * @package    logstore_caliper
- * @copyright  2016 MoodleRooms
+ * @copyright  Copyright (c) 2016 Blackboard Inc. (http://www.blackboardopenlms.com)
  * @author     Stephen Vickers
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
