@@ -18,7 +18,7 @@
  * Log expander controller.
  *
  * @package   logstore_caliper
- * @copyright Copyright (c) 2016 Blackboard Inc. (http://www.blackboardopenlms.com)
+ * @copyright Copyright (c) 2016 Blackboard Inc. (http://www.blackboard.com)
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -33,7 +33,7 @@ defined('MOODLE_INTERNAL') || die();
  * Log expander controller.
  *
  * @package   logstore_caliper
- * @copyright Copyright (c) 2016 Blackboard Inc. (http://www.blackboardopenlms.com)
+ * @copyright Copyright (c) 2016 Blackboard Inc. (http://www.blackboard.com)
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class log_expander_controller extends Controller {
