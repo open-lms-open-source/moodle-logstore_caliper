@@ -18,7 +18,7 @@
  * This file contains the class representing an Attempt Completed event.
  *
  * @package    logstore_caliper
- * @copyright  2016 Blackboard Inc. (http://www.blackboard.com)
+ * @copyright  2016 Open LMS (https://www.openlms.net)
  * @author     Stephen Vickers
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -31,7 +31,7 @@ defined('MOODLE_INTERNAL') || die();
  * This file contains the class representing a Attempt Completed event.
  *
  * @package    logstore_caliper
- * @copyright  2016 Blackboard Inc. (http://www.blackboard.com)
+ * @copyright  2016 Open LMS (https://www.openlms.net)
  * @author     Stephen Vickers
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
