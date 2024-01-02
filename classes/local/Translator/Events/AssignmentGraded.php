@@ -56,7 +56,7 @@ class AssignmentGraded extends Event {
             'graded_user_name' => "{$expandedevent['graded_user']->firstname} {$expandedevent['graded_user']->lastname}",
             'result_id' => "{$expandedevent['module']->url}/user/{$expandedevent['user']->id}" .
                 "/attempt/{$expandedevent['grade']->attemptnumber}/result",
-            'grade' => $expandedevent['grade']->grade
+            'grade' => $expandedevent['grade']->grade,
 
         ]);
     }

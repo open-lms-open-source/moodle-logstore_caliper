@@ -65,7 +65,7 @@ class Event extends \stdClass {
             'course_number' => $expandedevent['course']->idnumber,
             'course_name' => $expandedevent['course']->fullname ?: 'A Moodle course',
             'course_description' => $expandedevent['course']->summary ?: 'A Moodle course',
-            'roles' => $lisroles
+            'roles' => $lisroles,
         ];
     }
 }
