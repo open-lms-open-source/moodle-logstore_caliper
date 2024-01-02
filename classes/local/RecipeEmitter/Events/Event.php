@@ -25,7 +25,7 @@
 
 namespace logstore_caliper\local\RecipeEmitter\Events;
 
-use \IMSGlobal\Caliper\events;
+use IMSGlobal\Caliper\events;
 
 /**
  * This file contains the class representing a generic event

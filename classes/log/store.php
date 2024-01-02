@@ -29,12 +29,12 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once(__DIR__ . '/../../vendor/autoload.php');
 
-use \LogExpander;
-use \logstore_caliper\local\Translator;
-use \logstore_caliper\local\RecipeEmitter;
+use LogExpander;
+use logstore_caliper\local\Translator;
+use logstore_caliper\local\RecipeEmitter;
 
-use \IMSGlobal\Caliper;
-use \IMSGlobal\Caliper\entities\lis;
+use IMSGlobal\Caliper;
+use IMSGlobal\Caliper\entities\lis;
 use logstore_caliper\log_expander_controller;
 
 /**
