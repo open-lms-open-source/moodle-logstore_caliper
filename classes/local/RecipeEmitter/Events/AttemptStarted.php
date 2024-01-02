@@ -25,11 +25,11 @@
 
 namespace logstore_caliper\local\RecipeEmitter\Events;
 
-use \IMSGlobal\Caliper\entities\agent;
-use \IMSGlobal\Caliper\events;
-use \IMSGlobal\Caliper\entities\assignable;
-use \IMSGlobal\Caliper\entities\assessment;
-use \IMSGlobal\Caliper\actions;
+use IMSGlobal\Caliper\entities\agent;
+use IMSGlobal\Caliper\events;
+use IMSGlobal\Caliper\entities\assignable;
+use IMSGlobal\Caliper\entities\assessment;
+use IMSGlobal\Caliper\actions;
 
 /**
  * This file contains the class representing an Assessment Started event

@@ -25,7 +25,7 @@
 
 namespace logstore_caliper\local\Translator\Events;
 
-use \IMSGlobal\Caliper\entities\lis;
+use IMSGlobal\Caliper\entities\lis;
 
 /**
  * This file contains the class representing a generic Moodle event.

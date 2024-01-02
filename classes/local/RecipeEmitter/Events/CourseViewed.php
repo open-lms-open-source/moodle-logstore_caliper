@@ -25,8 +25,8 @@
 
 namespace logstore_caliper\local\RecipeEmitter\Events;
 
-use \IMSGlobal\Caliper\entities\lis;
-use \IMSGlobal\Caliper\events;
+use IMSGlobal\Caliper\entities\lis;
+use IMSGlobal\Caliper\events;
 
 /**
  * This file contains the class representing a Course Viewed event
