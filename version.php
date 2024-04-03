@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'logstore_caliper';
-$plugin->version = 2024012900;
+$plugin->version = 2024040200;
 $plugin->release = '4.1.3';
 $plugin->requires = 2022112800;
 $plugin->maturity = MATURITY_STABLE;
