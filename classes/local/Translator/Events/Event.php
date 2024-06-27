@@ -25,7 +25,7 @@
 
 namespace logstore_caliper\local\Translator\Events;
 
-use \IMSGlobal\Caliper\entities\lis;
+use IMSGlobal\Caliper\entities\lis;
 
 /**
  * This file contains the class representing a generic Moodle event.
@@ -65,7 +65,7 @@ class Event extends \stdClass {
             'course_number' => $expandedevent['course']->idnumber,
             'course_name' => $expandedevent['course']->fullname ?: 'A Moodle course',
             'course_description' => $expandedevent['course']->summary ?: 'A Moodle course',
-            'roles' => $lisroles
+            'roles' => $lisroles,
         ];
     }
 }

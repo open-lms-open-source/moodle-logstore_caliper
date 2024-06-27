@@ -25,10 +25,10 @@
 
 namespace logstore_caliper\local\RecipeEmitter\Events;
 
-use \IMSGlobal\Caliper\entities\agent;
-use \IMSGlobal\Caliper\events;
-use \IMSGlobal\Caliper\entities\assignable;
-use \IMSGlobal\Caliper\entities\outcome;
+use IMSGlobal\Caliper\entities\agent;
+use IMSGlobal\Caliper\events;
+use IMSGlobal\Caliper\entities\assignable;
+use IMSGlobal\Caliper\entities\outcome;
 
 /**
  * This file contains the class representing a Assignment Graded event

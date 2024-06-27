@@ -25,9 +25,9 @@
 
 namespace logstore_caliper\local\RecipeEmitter\Events;
 
-use \IMSGlobal\Caliper\events;
-use \IMSGlobal\Caliper\actions;
-use \IMSGlobal\Caliper\entities\agent;
+use IMSGlobal\Caliper\events;
+use IMSGlobal\Caliper\actions;
+use IMSGlobal\Caliper\entities\agent;
 
 /**
  * This file contains the class representing a User Logged In event

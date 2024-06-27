@@ -25,9 +25,9 @@
 
 namespace logstore_caliper\local\RecipeEmitter;
 
-use \IMSGlobal\Caliper\entities\agent;
-use \IMSGlobal\Caliper\entities\session;
-use \IMSGlobal\Caliper\entities\lis;
+use IMSGlobal\Caliper\entities\agent;
+use IMSGlobal\Caliper\entities\session;
+use IMSGlobal\Caliper\entities\lis;
 
 
 /**
