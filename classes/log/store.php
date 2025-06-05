@@ -160,7 +160,7 @@ class store extends \stdClass implements \tool_log\log\writer {
         try {
             $this->connect_caliper_repository();
             return true;
-        } catch (\moodle_exception $e) {
+        } catch (\core\exception\moodle_exception $e) {
             debugging('Cannot connect to LRS: ' . $e->getMessage(), DEBUG_DEVELOPER);
             return false;
         }
